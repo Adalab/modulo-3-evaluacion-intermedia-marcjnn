@@ -1,0 +1,13 @@
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+@import "../core/reset.scss";
+
+.pokemons {
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+  @include tablet {
+  }
+  @include desktop {
+  }
+}

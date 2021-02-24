@@ -1,4 +1,4 @@
-import "../style/App.scss";
+import "../style/components/App.scss";
 
 import React from "react";
 import PokeList from "./PokeList";
@@ -12,9 +12,14 @@ class App extends React.Component {
   }
   render() {
     return (
-      <main>
-        <PokeList data={this.state.pokemons} />
-      </main>
+      <>
+        <header className="header">
+          <h1>Mi lista de pokemon</h1>
+        </header>
+        <main className="main">
+          <PokeList data={this.state.pokemons} />
+        </main>
+      </>
     );
   }
 }

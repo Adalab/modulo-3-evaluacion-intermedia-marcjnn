@@ -1,3 +1,5 @@
+import "../style/components/PokeList.scss";
+
 import Pokemon from "./Pokemon";
 
 const PokeList = (props) => {
@@ -8,7 +10,7 @@ const PokeList = (props) => {
       </li>
     );
   });
-  return <ul>{pokeList}</ul>;
+  return <ul className="pokemons">{pokeList}</ul>;
 };
 
 export default PokeList;

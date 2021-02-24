@@ -1,0 +1,14 @@
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+@import "../core/reset.scss";
+
+.header {
+  font-family: $fontTitle;
+  text-align: center;
+  padding: 20px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}

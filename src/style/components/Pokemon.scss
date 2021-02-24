@@ -1,0 +1,31 @@
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+@import "../core/reset.scss";
+
+.pokemon {
+  border: 2px solid $colorBorder;
+  border-radius: 8px;
+  font-family: $fontMain;
+  background-color: $colorBgr;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  &__name {
+    padding: 6px 12px;
+    text-transform: capitalize;
+    border-top: 1px solid $colorBorder;
+    border-bottom: 1px solid $colorBorder;
+    text-align: center;
+  }
+  &__img {
+    padding: 20px;
+  }
+  &__types {
+    padding: 6px 12px;
+    display: inline-flex;
+    font-style: italic;
+  }
+  &__item {
+    padding-right: 6px;
+  }
+}
