@@ -1,15 +1,19 @@
 import "../style/App.scss";
 
 import React from "react";
+import PokeList from "./PokeList";
 
-// import data from "../data/data.json";
+import data from "../data/data.json";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <p className="quote">
-        A mouse took a stroll throught the deep dark wood...
-      </p>
+      <main>
+        <PokeList data={data}/>
+      </main>
     );
   }
 }

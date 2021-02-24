@@ -1,5 +1,8 @@
-import Item from "./Item";
+// import Item from "./Item";
 
-const List = () => {};
+const PokeList = (props) => {
+  console.log(props.data);
+  return <>{props.data[0].name}</>;
+};
 
-export default List;
+export default PokeList;
