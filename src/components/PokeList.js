@@ -1,8 +1,14 @@
-// import Item from "./Item";
+import Pokemon from "./Pokemon";
 
 const PokeList = (props) => {
-  console.log(props.data);
-  return <>{props.data[0].name}</>;
+  const pokeList = props.data.map((pokemon) => {
+    return (
+      <li key={pokemon.id} id={pokemon.id}>
+        <Pokemon pokemon={pokemon} />
+      </li>
+    );
+  });
+  return <ul>{pokeList}</ul>;
 };
 
 export default PokeList;
