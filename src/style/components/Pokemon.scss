@@ -6,7 +6,6 @@
   border: 2px solid $colorBorder;
   border-radius: 8px;
   font-family: $fontMain;
-  // background-color: $colorBgr;
   width: 160px;
   display: flex;
   flex-direction: column;
@@ -26,7 +25,13 @@
     font-style: italic;
   }
   &__item {
-    padding-right: 6px;
+    margin-right: 6px;
+    padding: 2px 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: $colorBorder;
+    border-radius: 3px;
+    color: white;
   }
   &.bgr--grass {
     background-color: $colorBgrGrass;
