@@ -6,7 +6,7 @@
   border: 2px solid $colorBorder;
   border-radius: 8px;
   font-family: $fontMain;
-  background-color: $colorBgr;
+  // background-color: $colorBgr;
   width: 160px;
   display: flex;
   flex-direction: column;
@@ -27,5 +27,17 @@
   }
   &__item {
     padding-right: 6px;
+  }
+  &.bgr--grass {
+    background-color: $colorBgrGrass;
+  }
+  &.bgr--fire {
+    background-color: $colorBgrFire;
+  }
+  &.bgr--water {
+    background-color: $colorBgrWater;
+  }
+  &.bgr--default {
+    background-color: $colorBgrDefault;
   }
 }
