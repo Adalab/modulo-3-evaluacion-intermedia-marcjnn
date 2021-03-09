@@ -1,4 +1,5 @@
 import "../style/components/PokeList.scss";
+import PropTypes from "prop-types";
 
 import Pokemon from "./Pokemon";
 
@@ -11,6 +12,10 @@ const PokeList = (props) => {
     );
   });
   return <ul className="pokemons">{pokeList}</ul>;
+};
+
+PokeList.propTypes = {
+  data: PropTypes.array.isRequired,
 };
 
 export default PokeList;

@@ -1,4 +1,5 @@
 import "../style/components/Pokemon.scss";
+import PropTypes from "prop-types";
 
 const Pokemon = (props) => {
   let bgr = "";
@@ -8,7 +9,9 @@ const Pokemon = (props) => {
     bgr = "fire";
   } else if (props.pokemon.types.includes("water")) {
     bgr = "water";
-  } else {bgr = "default"}
+  } else {
+    bgr = "default";
+  }
 
   const pokeTypes = props.pokemon.types.map((type, index) => {
     return (
@@ -28,6 +31,10 @@ const Pokemon = (props) => {
       <ul className="pokemon__types">{pokeTypes}</ul>
     </article>
   );
+};
+
+Pokemon.propTypes = {
+  pokemon: PropTypes.object.isRequired,
 };
 
 export default Pokemon;
